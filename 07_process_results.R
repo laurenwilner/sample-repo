@@ -25,7 +25,7 @@ for(dir in results_dirs){
 files <- new_files
 
 # remove old results and exposure summaries 
-files <- files[!grepl("Old", files)]
+files <- files[!grepl("New", files)]
 files <- files[!grepl("Exposure", files)]
 
 # read in and create a column for the file name
