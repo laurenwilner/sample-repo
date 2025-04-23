@@ -21,6 +21,9 @@ for(dir in results_dirs){
   }
 }
 
+# need to fix up files 
+files <- new_files
+
 # remove old results and exposure summaries 
 files <- files[!grepl("Old", files)]
 files <- files[!grepl("Exposure", files)]
@@ -54,6 +57,7 @@ for(f in files){
 
 # make a plot of each model --------------------------------
 
+plots <- data.frame()
 # list of plots
 plots <- list()
 
